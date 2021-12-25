@@ -128,5 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-#media folder of project
+# media folder of project
 /media/
+
+# pycharm folder
+/.idea/
