@@ -13,4 +13,4 @@ class RenteeSerializer(serializers.ModelSerializer):
 class RenterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('username', )
+        fields = ('id', 'username')

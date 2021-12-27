@@ -1,8 +1,9 @@
 from django.urls import path
 
-from rent.views import RentListView
+from rent.views import RentListCreateView, RentDetailView
 
 
 urlpatterns = [
-    path('list/', RentListView.as_view())
+    path('', RentListCreateView.as_view()),
+    path('<int:pk>', RentDetailView.as_view()),
 ]

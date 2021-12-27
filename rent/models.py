@@ -31,9 +31,9 @@ class Rent(models.Model):
     paid = models.PositiveIntegerField()
     rented_date = models.DateTimeField(auto_now_add=True)
     closed_date = models.DateField()
-
-    def __str__(self):
-        return self.rentee.name
+    #
+    # def __str__(self):
+    #     return self.rentee.name
 
 
 class RentedItem(models.Model):
